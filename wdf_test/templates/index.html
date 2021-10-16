@@ -1,0 +1,180 @@
+<!doctype html>
+{% load cms_tags sekizai_tags %}
+{% load static %}
+  <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>M7</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+    <link rel="apple-touch-icon" href="{% static 'icon.png' %}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <meta name="theme-color" content="#fafafa">
+  </head>
+
+  <body>
+
+    <div id="app">
+
+      <app-header home-link="./">
+        <ul class="header-nav header-nav--dark">
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">Menu #1</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link active" aria-current="page">Menu #2</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header-nav__link">Menu #3</a>
+          </li>
+        </ul>
+      </app-header>
+
+      <section class="hello">
+        <!--
+          <picture class="hello__picture">
+          <source media="(max-width:699px)" srcset="./img/hello-about-us-mobile-bg.jpg 1x, ./img/hello-about-us-mobile-bg@2x.jpg 2x">
+          <source media="(min-width:700px)" srcset="./img/hello-about-us-desktop-bg.jpg 1x, ./img/hello-about-us-desktop-bg@2x.jpg 2x">
+          <img src="./img/hello-about-us-desktop-bg.jpg" alt="">
+        </picture>
+        -->
+        {% placeholder "hello_picture" %}        
+      </section>
+
+      <section class="section section--spacer container">
+        <div class="section__name text-center">Who we are</div>
+        <h1 class="section__title mb-5 mb-md-7 text-center">
+          The <span>M7 group</span> represents the majority shareholders (over 60 %) in the <span>Wilh. Wilhelmsen</span>
+          family office and group of companies, including the <span>Toluma</span> investment companies and <span>Skips AS Tudor</span>.
+        </h1>
+
+
+        <div class="row gx-lg-6">
+          <div class="col-md-6">
+
+            <div class="sticky-top">
+              <div class="section__name">We are</div>
+              <div class="section__perex mb-5">
+                <p>
+                  Working to guarantee fair treatment for all shareholders by modernizing outdated control structures and preventing exploitation of majority shareholders by one minority shareholder.
+                </p>
+
+                <p>
+                  Concerned about the businesses, the workplaces, the employees, the environment and the community at large, and we want to help decide how the family's capital is invested.
+                </p>
+
+                <p>
+                  Unable to do that today. The Wilhelmsen group of companies needs transparency, modern corporate governance, and strong, diversified leadership.  This will ensure sustainability and growth for the future.
+                </p>
+              </div>
+              <a href="#" class="btn btn-lg btn-primary me-2 mb-6">Holdings structure <i class="icon icon-arrow-right ms-2"></i></a>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="text-center">
+              <figure class="figure mb-6 mb-md-9">
+                <!--
+                  <img src="./img/about-us.jpg" srcset="./img/about-us@2x.jpg 2x" alt="">
+                -->
+                {% placeholder "about_us_picture" %}                
+              </figure>
+            </div>
+
+            <div class="section__name">M7 group founders</div>
+
+            <ul class="list-border">
+              <li><span>Hedvig</span> Juell</li>
+              <li><span>Helen</span> Juell</li>
+              <li><span>Maren</span> Juell</li>
+              <li><span>Olympia</span> Paus</li>
+              <li><span>Pontine</span> Paus</li>
+              <li><span>Cathrine</span> Løvenskiold Wilhelmsen</li>
+              <li><span>Hannah</span> Eshete Wilhelmsen</li>
+            </ul>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section-picture section--spacer">
+
+        <div class="m7-dot mx-auto">
+          <span class="m7-dot__title">M7</span>
+        </div>
+        <!--
+             <picture class="section-picture__picture">
+          <source media="(max-width: 799px)" srcset="./img/section-m7-bg-mobile.jpg 1x, ./img/section-m7-bg-mobile@2x.jpg 2x">
+          <source media="(min-width: 800px)" srcset="./img/section-m7-bg-desktop.jpg 1x, ./img/section-m7-bg-desktop@2x.jpg 2x">
+          <img src="./img/section-news-bg-desktop.jpg" alt="">
+        </picture>
+
+        -->
+        <img src="{% static '/img/section-news-bg-desktop.jpg' %}" alt="">
+     
+      </section>
+
+      <section class="section section--spacer">
+
+        <div class="container container--md text-center">
+          <h2 class="section__title mb-5">
+            Specifically, the <span>M7 Group’s cause focuses on</span> ownership structure, proper corporate governance, fairness, and transparency.
+          </h2>
+
+          <div class="section__perex">
+            <p>
+              We believe that this is the key to good stewardship and further growth.  It also is fully in line with what investors and society expect.  While the family controls a majority of the assets, the M7 Group recognizes that the family is also responsible for the assets of other shareholders. They too must be treated better, with transparency and responsible capital management.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer section--spacer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <span class="section__name mb-5">Contact info</span>
+              <a href="mailto:" class="footer__info-link">
+                <span>hello@mgrupppen.no</span>
+              </a><br>
+              <a href="tel:+4712345600" class="footer__info-link">
+                (+47) 12 34 56 00
+              </a>
+
+              <div class="my-4">
+                <a href="#" class="social-dot"><i class="icon icon-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <ul class="footer__nav mb-4 mb-md-0">
+                <li><a href="#">Discussion</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact info</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 align-self-end">
+              <span class="copyright">
+                2021 &copy; M7 Group
+              </span>
+
+              <div class="created-by mt-2">
+                <a href="//www.wdf.cz" target="_blank" rel="noopener noreferrer"><i class="icon icon-wdf"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/bundle.js' %}" type="module"></script>
+  </body>
+</html>
