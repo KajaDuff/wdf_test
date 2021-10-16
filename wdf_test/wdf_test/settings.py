@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     'djangocms_googlemap',
     'djangocms_snippet',
     'djangocms_style',
+    'cmsplugin_plain_text',
 ]
 
 SITE_ID = 1
