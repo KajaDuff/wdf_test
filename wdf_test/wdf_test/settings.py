@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'djangocms_snippet',
     'djangocms_style',
     'cmsplugin_plain_text',
+    'wdf_test',
 ]
 
 SITE_ID = 1
