@@ -195,6 +195,10 @@ THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.filters'
 )
 
+DJANGOCMS_PICTURE_RESPONSIVE_IMAGES = True
+DJANGOCMS_PICTURE_NESTING = True
+#DJANGOCMS_PICTURE_RESPONSIVE_IMAGES_VIEWPORT_BREAKPOINTS
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
