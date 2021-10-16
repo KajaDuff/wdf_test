@@ -200,6 +200,10 @@ DJANGOCMS_PICTURE_RESPONSIVE_IMAGES = True
 DJANGOCMS_PICTURE_NESTING = True
 #DJANGOCMS_PICTURE_RESPONSIVE_IMAGES_VIEWPORT_BREAKPOINTS
 
+DJANGOCMS_ICON_SETS = [
+    ('fontawesome4', 'fa', 'Font Awesome 4', '4.0.0'),
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
