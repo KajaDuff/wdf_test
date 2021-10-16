@@ -84,15 +84,13 @@
             <div class="m7-dot mx-auto">
                 <span class="m7-dot__title">M7</span>
             </div>
-            <!--
-             <picture class="section-picture__picture">
-          <source media="(max-width: 799px)" srcset="./img/section-m7-bg-mobile.jpg 1x, ./img/section-m7-bg-mobile@2x.jpg 2x">
-          <source media="(min-width: 800px)" srcset="./img/section-m7-bg-desktop.jpg 1x, ./img/section-m7-bg-desktop@2x.jpg 2x">
-          <img src="./img/section-news-bg-desktop.jpg" alt="">
-        </picture>
 
-        -->
-            <img src="{% static '/img/section-news-bg-desktop.jpg' %}" alt="">
+            <picture class="section-picture__picture">
+                <source media="(max-width: 799px)" srcset="{% static '/img/section-m7-bg-mobile.jpg' 1x %}, {% static '/img/section-m7-bg-mobile@2x.jpg' 2x %}">
+                <source media="(min-width: 800px)" srcset="{% static '/img/section-m7-bg-desktop.jpg' 1x  %}, {% static '/img/section-m7-bg-desktop@2x.jpg' 2x %}">
+                <img src="{% static '/img/section-news-bg-desktop.jpg' %}" alt="">
+            </picture>
+
 
         </section>
 
