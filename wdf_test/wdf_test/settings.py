@@ -205,6 +205,8 @@ DJANGOCMS_ICON_SETS = [
     ('fontawesome4', 'fa', 'Font Awesome 4', '4.0.0'),
 ]
 
+DJANGOCMS_BOOTSTRAP4_USE_ICONS = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
